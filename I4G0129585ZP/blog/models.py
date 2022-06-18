@@ -8,5 +8,3 @@ class Post(models.Model):
     author=models.ForeignKey(User, on_delete=models.CASCADE)
 	created_date=models.DateTimeField()
 	published_date= models.DateTimeField()
-	def __str__(self):
-		return self.title
